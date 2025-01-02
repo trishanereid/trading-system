@@ -1,6 +1,8 @@
 package edu.neuralfintech.market_data_service.service;
 
+import java.util.List;
+
 public interface MarketData {
 
-    void generatePriceAndSize();
+    List<? extends Number> generatePriceAndSize();
 }
