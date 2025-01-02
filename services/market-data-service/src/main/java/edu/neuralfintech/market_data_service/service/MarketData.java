@@ -1,8 +1,10 @@
 package edu.neuralfintech.market_data_service.service;
 
-import java.util.List;
+import java.util.concurrent.Future;
 
 public interface MarketData {
 
-    List<? extends Number> generatePriceAndSize();
+    String generatePriceAndSize();
+
+    Future<String> startTask();
 }
